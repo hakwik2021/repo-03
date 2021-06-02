@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app-qr-code-01</string>
+    <string name="enter_text">Enter Text</string>
+    <string name="generate">Generate</string>
+    <string name="scan">Scan</string>
+    <string name="data_string">Data String</string>
+</resources>

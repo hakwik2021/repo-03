@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_create_qr_code"
+        android:title="Create QR Code" />
+    <item
+        android:id="@+id/action_scan_qr_code"
+        android:title="Scan QR Code" />
+</menu>
+
+    <!--        android:icon="@drawable/ic_logout"-->
+
+
+    <!--<item-->
+    <!--android:id="@+id/action_fatal_crash"-->
+    <!--android:checkable="true"-->
+    <!--android:title="Fatal Crash"-->
+    <!--app:actionViewClass="android.widget.CheckBox"-->
+    <!--app:showAsAction="ifRoom|withText" />-->
