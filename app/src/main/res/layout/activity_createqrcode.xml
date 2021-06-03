@@ -5,62 +5,154 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CreateQrCodeActivity">
-
-    <EditText
-        android:id="@+id/etName"
+    <!--
+        android:textColorHint="@color/text_input_layout_color"
+    -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_layoutFirstName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:hint="First Name"
+        app:endIconMode="clear_text"
         android:ems="10"
-        android:hint="Name"
+        app:boxStrokeColor="@color/text_input_layout_color"
+        app:hintTextColor="@color/text_input_layout_color"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+        <!--
+            android:textColor="@color/text_input_edit_text_color"
+        -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ti_etFirstName"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/etPhone"
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_layoutLastName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:hint="Last Name"
+        app:endIconMode="clear_text"
         android:ems="10"
-        android:hint="Phone"
-        android:inputType="phone"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPostal" />
+        app:layout_constraintTop_toBottomOf="@id/ti_layoutFirstName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ti_etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/etPostal"
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_layoutAddress"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:hint="Address"
+        app:endIconMode="clear_text"
         android:ems="10"
-        android:hint="Postal"
-        android:inputType="textPostalAddress"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etName" />
+        app:layout_constraintTop_toBottomOf="@id/ti_layoutLastName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ti_etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/etTemperature"
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_layoutMobileNumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:hint="Mobile Number"
+        app:endIconMode="clear_text"
         android:ems="10"
-        android:hint="Temperature"
-        android:inputType="numberDecimal"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+        app:layout_constraintTop_toBottomOf="@id/ti_layoutAddress">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ti_etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+<!--    <EditText-->
+<!--        android:id="@+id/etName"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Name"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etPhone"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Phone"-->
+<!--        android:inputType="phone"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etPostal" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etPostal"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Postal"-->
+<!--        android:inputType="textPostalAddress"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etName" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etTemperature"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Temperature"-->
+<!--        android:inputType="numberDecimal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etPhone" />-->
 
     <Button
         android:id="@+id/btnCreateQrCode"
@@ -70,9 +162,9 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:text="Create QR Code"
-        app:layout_constraintEnd_toEndOf="@+id/etTemperature"
-        app:layout_constraintStart_toStartOf="@+id/etTemperature"
-        app:layout_constraintTop_toBottomOf="@+id/etTemperature" />
+        app:layout_constraintEnd_toEndOf="@+id/ti_layoutMobileNumber"
+        app:layout_constraintStart_toStartOf="@+id/ti_layoutMobileNumber"
+        app:layout_constraintTop_toBottomOf="@+id/ti_layoutMobileNumber" />
 
     <ImageView
         android:id="@+id/ivOutput"
