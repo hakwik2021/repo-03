@@ -20,11 +20,18 @@ class CreateQrCodeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_createqrcode)
 
         btnCreateQrCode.setOnClickListener {
-            val name = etName.text.toString()
-            val postal = etPostal.text.toString()
-            val phone = etPhone.text.toString()
-            val temperature = etTemperature.text.toString()
-            val person = Person(name, postal, phone, temperature)
+//            val name = etName.text.toString()
+//            val postal = etPostal.text.toString()
+//            val phone = etPhone.text.toString()
+//            val temperature = etTemperature.text.toString()
+//            val person = Person(name, postal, phone, temperature)
+
+
+            val name = ti_etFirstName.text.toString()
+            val postal = ti_etLastName.text.toString()
+            val address = ti_etAddress.text.toString()
+            val mobile = ti_etMobileNumber.text.toString()
+            val person = Person(name, postal, address, mobile)
             generateQrCodeUsingObject(person)
             //generateQrCodeUsingBundle(person)
         }
