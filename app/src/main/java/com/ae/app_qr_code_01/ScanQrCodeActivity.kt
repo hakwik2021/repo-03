@@ -1,6 +1,7 @@
 package com.ae.app_qr_code_01
 
 import android.Manifest
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -43,6 +44,12 @@ class ScanQrCodeActivity : AppCompatActivity() {
 
         scanner.setOnClickListener {
             csvScanner.startPreview()
+        }
+
+        btnStopScan.setOnClickListener {
+            csvScanner.stopPreview()
+            csvScanner.releaseResources()
+            startActivity(Intent(applicationContext, MainActivity::class.java))
         }
     }
 
